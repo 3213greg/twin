@@ -14,7 +14,7 @@
     <style>
         @media(max-width:767px) {
             .container { padding:0 1rem !important; }
-            .nav-wrapper { padding:0.75rem 0 !important; justify-content:flex-start !important; }
+            .nav-wrapper { padding:0.75rem 0 !important; justify-content:center !important; }
             .logo { font-size:1.1rem !important; gap:0.5rem !important; }
             .logo img { height:35px !important; }
             .hamburger { display:flex !important; }
@@ -47,8 +47,9 @@
         .mobile-menu a:hover { color:#00D9FF; }
         .mobile-close { 
             position:absolute; 
-            top:1.5rem; 
-            left:1rem; 
+            top:1.35rem; 
+            left:50%; 
+            transform:translateX(-80px);
             font-size:2rem; 
             color:white; 
             cursor:pointer;
@@ -67,7 +68,7 @@
     <!-- NAVBAR -->
     <nav class="navbar">
         <div class="container nav-wrapper" style="display:flex; align-items:center; justify-content:space-between; padding:0.75rem 0;">
-            <div style="display:flex; align-items:center; gap:0.75rem;">
+            <div style="display:flex; align-items:center; justify-content:center; gap:0.75rem; width:100%;">
                 <div class="hamburger" id="hamburger" style="display:flex; flex-direction:column; gap:4px; cursor:pointer; z-index:1001;">
                     <span style="width:22px; height:2px; background:white; border-radius:2px;"></span>
                     <span style="width:22px; height:2px; background:white; border-radius:2px;"></span>
