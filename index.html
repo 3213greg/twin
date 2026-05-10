@@ -11,15 +11,28 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@600;700;800;900&display=swap" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="icon" type="image/png" href="logo.png">
+    <style>
+        @media(max-width:767px) {
+            .container { padding:0 1rem !important; }
+            .nav-wrapper { padding:0.75rem 0 !important; }
+            .logo { font-size:1.1rem !important; gap:0.5rem !important; }
+            .logo img { height:35px !important; }
+            .hamburger { display:flex !important; }
+            .nav-menu, .nav-cta { display:none !important; }
+        }
+        @media(min-width:768px) {
+            .hamburger { display:none !important; }
+        }
+    </style>
 </head>
 <body>
 
     <!-- NAVBAR -->
     <nav class="navbar">
-        <div class="container nav-wrapper">
-            <a href="#" class="logo">
-                <img src="logo.png" alt="Twin Detail Logo">
-                <span>Twin Detail</span>
+        <div class="container nav-wrapper" style="display:flex; align-items:center; justify-content:space-between; padding:0.75rem 0;">
+            <a href="#" class="logo" style="display:flex; align-items:center; gap:0.5rem; font-size:1.1rem; font-weight:800; color:white; text-decoration:none;">
+                <img src="logo.png" alt="Twin Detail Logo" style="height:35px; width:auto; border-radius:0.5rem;">
+                <span style="white-space:nowrap;">Twin Detail</span>
             </a>
             <ul class="nav-menu">
                 <li><a href="#uslugi">Usługi</a></li>
@@ -28,10 +41,10 @@
                 <li><a href="#kontakt">Kontakt</a></li>
             </ul>
             <a href="#kontakt" class="nav-cta">Umów się</a>
-            <div class="hamburger" id="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
+            <div class="hamburger" id="hamburger" style="display:flex; flex-direction:column; gap:4px; cursor:pointer; z-index:1001;">
+                <span style="width:24px; height:2px; background:white; border-radius:2px;"></span>
+                <span style="width:24px; height:2px; background:white; border-radius:2px;"></span>
+                <span style="width:24px; height:2px; background:white; border-radius:2px;"></span>
             </div>
         </div>
     </nav>
